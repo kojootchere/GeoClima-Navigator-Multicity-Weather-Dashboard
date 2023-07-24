@@ -1,0 +1,74 @@
+body {
+  font-family: 'Arial', sans-serif; /* Sets the font of the body content to 'Arial', if not available defaults to any sans-serif font */
+  background-color: grey; /* Sets the background color of the body to grey */
+}
+
+header {
+  padding: 30px; /* Sets the padding inside the header to 30 pixels */
+  text-align: center; /* Centers the text inside the header */
+  margin-bottom: 20px; /* Adds a margin of 20 pixels beneath the header */
+}
+
+.main-container {
+  display: flex; /* Applies flexbox layout for the main-container */
+  justify-content: center; /* Centers the child elements on the main axis */
+  flex-direction: column; /* Sets the direction of the flex items to column */
+}
+
+.search-row, .forecast-row {
+  display: flex; /* Applies flexbox layout for the elements with classes .search-row and .forecast-row */
+  justify-content: center; /* Centers the child elements on the main axis */
+}
+
+.search-col {
+  background-color: #f8f9fa; /* Sets the background color of the search column */
+  padding: 20px; /* Sets the padding inside the search column to 20 pixels */
+  border-radius: 10px; /* Rounds the corners of the search column */
+  margin: 10px; /* Adds a margin of 10 pixels around the search column */
+}
+
+.result-col {
+  background-color: #f8f9fa; /* Sets the background color of the result column */
+  padding: 20px; /* Sets the padding inside the result column to 20 pixels */
+  border-radius: 10px; /* Rounds the corners of the result column */
+  margin: 10px; /* Adds a margin of 10 pixels around the result column */
+}
+
+.inline-form {
+  margin-bottom: 20px; /* Adds a margin of 20 pixels beneath the inline-form */
+}
+
+.city-search-input {
+  margin-right: 10px; /* Adds a margin of 10 pixels to the right of the city search input field */
+}
+
+.search-btn, .clear-btn {
+  margin-top: 10px; /* Adds a margin of 10 pixels above the search and clear buttons */
+}
+
+.weather-col {
+  padding: 20px; /* Sets the padding inside the weather column to 20 pixels */
+  border-radius: 10px; /* Rounds the corners of the weather column */
+  background-color: #e9ecef; /* Sets the background color of the weather column */
+}
+
+.forecast-col {
+  padding: 20px; /* Sets the padding inside the forecast column to 20 pixels */
+  margin: 10px; /* Adds a margin of 10 pixels around the forecast column */
+}
+
+.forecast-card {
+  padding: 10px; /* Sets the padding inside the forecast card to 10 pixels */
+  margin: 10px; /* Adds a margin of 10 pixels around the forecast card */
+  border-radius: 10px; /* Rounds the corners of the forecast card */
+}
+
+.forecast-icon {
+  width: 50px; /* Sets the width of the forecast icons to 50 pixels */
+  height: 50px; /* Sets the height of the forecast icons to 50 pixels */
+}
+
+footer {
+  padding: 20px; /* Sets the padding inside the footer to 20 pixels */
+  bottom: 0; /* Positions the footer at the bottom of the parent container */
+}

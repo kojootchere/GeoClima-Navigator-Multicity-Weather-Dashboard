@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>GeoClima Navigator: Multicity Weather Dashboard</title>
+</head>
+
+<body>
+    <!--Start of body. Contains all the contents of an HTML document, such as text, hyperlinks, images, tables, lists, etc-->
+
+    <header class="d-flex align-items-center justify-content-center" style="height: 60px; background-color: #f8f9fa;">
+        <!--Header of the document, Bootstrap classes are used for styling-->
+        <h1>Weather Dashboard</h1> <!--Heading of the document-->
+    </header> <!--End of header section-->
+
+    <div class="main-container container"> <!--A container div that holds the main content of the website-->
+
+        <!--Following sections contain the layout and input for the weather search-->
+        <article class="search-row column">
+            <aside class="search-col col-4 border border-dark m-1">
+                <h3><strong>Check the Weather in Your City:</strong></h3> <!--Instruction for the user-->
+                <div class="inline-form form-inline"> <!--Form for the search input-->
+                    <input id="city-input" class="city-search-input form-control" type="text" placeholder="Find a City">
+                    <!--Input field for the city search-->
+                    <button id="search-button" class="search-btn btn btn-primary" type="button">Find</button>
+                    <!--Search button-->
+                </div>
+                <div id="search-history" class="history-container mr-5 mt-2"></div>
+                <!--Div that will hold the search history-->
+                <button id="clear-btn" class="clear-btn btn btn-primary">Clear History</button>
+                <!--Button to clear search history-->
+            </aside>
+        </article> <!--End of search section-->
+
+        <!--Following sections display the weather results for the searched city-->
+        <div class="search-row">
+            <div class="result-col col-8 mt-4 border border-dark m-1">
+                <h3>Today's Weather at a Glance</h3> <!--Heading for the result section-->
+                <div class="weather-col column"> <!--Section that will hold the weather details-->
+                    <div class="weather-col col-7"> <!--Inner section that will hold the weather details-->
+                        <!--The following lines will hold the dynamic weather data for the searched city-->
+                        <h4 id="city-name" class="city-result">
+                            <img id="currentIcon" class="current-icon">
+                            <span class="current-day lead"></span>
+                        </h4>
+                        <span id="temperature" class="temp-data"></span>
+                        <span id="humidity" class="humidity-data"></span>
+                        <span id="windspeed" class="wind-data"></span>
+                    </div>
+                </div>
+            </div>
+        </div> <!--End of weather result section-->
+
+        <!--Following sections display the 5-day forecast for the searched city-->
+        <article class="forecast-row row">
+            <div class="forecast-col col-10">
+                <h3>5-Day Forecast</h3> <!--Heading for the forecast section-->
+                <div class="forecast-content row"> <!--Section that will hold the forecast details-->
+
+                    <!-- The following structures are repeated for each day of the forecast -->
+                    <!-- Start of Day 1 Card -->
+                    <div class="forecast-card col bg-primary text-white ml-3 mb-3 rounded">
+                        <h5 id="date0-wind" class="forecast-wind"></h5>
+                        <img id="Icon0" class="forecast-icon">
+                        <div id="date0-temp" class="forecast-temp">
+                        </div>
+                        <div id="date0-humidity" class="forecast-humidity">
+                        </div>
+                    </div>
+                    <!-- End of Day 1 Card -->
+                    <!-- Start of Day 2 Card -->
+                    <div class="forecast-card col bg-primary text-white ml-3 mb-3 rounded">
+                        <h5 id="date1-wind" class="forecast-wind"></h5>
+                        <img id="Icon1" class="forecast-icon">
+                        <div id="date1-temp" class="forecast-temp">
+                        </div>
+                        <div id="date1-humidity" class="forecast-humidity">
+                        </div>
+                    </div>
+                    <!-- End of Day 2 Card -->
+                    <!-- Start of Day 3 Card -->
+                    <div class="forecast-card col bg-primary text-white ml-3 mb-3 rounded">
+                        <h5 id="date2-wind" class="forecast-wind"></h5>
+                        <img id="Icon2" class="forecast-icon">
+                        <div id="date2-temp" class="forecast-temp">
+                        </div>
+                        <div id="date2-humidity" class="forecast-humidity">
+                        </div>
+                    </div>
+                    <!-- End of Day 3 Card -->
+                    <!-- Start of Day 4 Card -->
+                    <div class="forecast-card col bg-primary text-white ml-3 mb-3 rounded">
+                        <h5 id="date3-wind" class="forecast-wind"></h5>
+                        <img id="Icon3" class="forecast-icon">
+                        <div id="date3-temp" class="forecast-temp">
+                        </div>
+                        <div id="date3-humidity" class="forecast-humidity">
+                        </div>
+                    </div>
+                    <!-- End of Day 4 Card -->
+                    <!-- Start of Day 5 Card -->
+                    <div class="forecast-card col bg-primary text-white ml-3 mb-3 rounded">
+                        <h5 id="date4-wind" class="forecast-wind"></h5>
+                        <img id="Icon4" class="forecast-icon">
+                        <div id="date4-temp" class="forecast-temp">
+                        </div>
+                        <div id="date4-humidity" class="forecast-humidity">
+                        </div>
+                    </div>
+                    <!-- End of Day 5 Card -->
+                </div>
+            </div>
+        </article>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="assets/js/script.js"></script>
+
+    <footer class="fixed-bottom d-flex align-items-center justify-content-center"
+        style="height: 60px; background-color: #f8f9fa;">
+        <p class="mb-0">&copy; 2023 GeoClima Navigator | All rights reserved.</p>
+    </footer>
+    </body>
+
+</html>
