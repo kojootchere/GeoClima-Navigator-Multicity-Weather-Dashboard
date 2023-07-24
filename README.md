@@ -1,4 +1,4 @@
-# GeoClima-Navigator-Multicity-Weather-Dashboard
+# GeoClima Navigator: Multicity Weather Dashboard
 
 ## Description
 
